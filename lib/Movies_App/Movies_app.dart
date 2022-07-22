@@ -49,11 +49,11 @@ class _MoviesState extends State<Movies> {
                   child: Column(
                     children: [
                       Text(
-                        'DOCTOR STRANGE',
-                        style: TextStyle(color: Color, fontSize: 35),
+                       '${widget.movie.title}',
+                        style: TextStyle(color: Color, fontSize: 30),
                       ),
-                      const Text(
-                        '2022· ',
+                       Text(
+                        '${widget.movie.releaseDate}',
                         style: TextStyle(color: Colors.grey),
                       ),
                       Row(
@@ -165,7 +165,7 @@ class _MoviesState extends State<Movies> {
                             padding: const EdgeInsets.only(top: 10),
                             margin: const EdgeInsets.only(right: 35),
                             child: Text(
-                              'Dawood Botros',
+                              'Benedict Cumberbatch',
                               textAlign: TextAlign.center,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
